@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @workexperience %>
+
+<div>
+  <%= link_to "Edit this workexperience", edit_workexperience_path(@workexperience) %> |
+  <%= link_to "Back to workexperiences", workexperiences_path %>
+
+  <%= button_to "Destroy this workexperience", @workexperience, method: :delete %>
+</div>

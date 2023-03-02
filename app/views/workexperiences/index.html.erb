@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Workexperiences</h1>
+
+<div id="workexperiences">
+  <% @workexperiences.each do |workexperience| %>
+    <%= render workexperience %>
+    <p>
+      <%= link_to "Show this workexperience", workexperience %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New workexperience", new_workexperience_path %>
