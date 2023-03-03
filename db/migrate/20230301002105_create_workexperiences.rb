@@ -3,7 +3,6 @@ class CreateWorkexperiences < ActiveRecord::Migration[7.0]
     create_table :workexperiences do |t|
       t.string :designation
       t.string :company
-      t.string :current_company
       t.date :startdate
       t.date :enddate
       t.text :about
