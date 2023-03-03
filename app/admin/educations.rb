@@ -27,6 +27,7 @@ ActiveAdmin.register Education do
     column :created_at
     actions
   end
+  
   filter :university
   filter :startdate
   filter :enddate
@@ -34,6 +35,7 @@ ActiveAdmin.register Education do
   filter :current_sign_in_at
   filter :sign_in_count
   filter :created_at
+  
   form do |f|
     f.inputs do
       f.input :university
