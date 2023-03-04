@@ -1,0 +1,17 @@
+<% Profile.all.each do |pro| %>
+    <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+            <img src="<%= pro.image%>" style="width:100%">
+            <div class="w3-display-bottomleft w3-container w3-text-black">
+                <b><%= pro.name %></b><br/>
+            </div>
+        </div>
+    </div>    
+    <hr>    
+    <div class="w3-container">
+        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><%= pro.designation %></p>
+        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><%= pro.address %></p>
+        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><%= pro.email %></p>
+        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><%= pro.phoneno %></p>
+    </div> 
+<% end %>
