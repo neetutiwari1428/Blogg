@@ -24,7 +24,7 @@
           <% Profile.all.each_slice(3).each do |pro| %>
             <%= render 'leftcolumn',leftcolumn: pro %>
           <% end %>
-          <% @skills.each_slice(3).each do |pro| %>
+          <% @skills.each_slice(4).each do |pro| %>
             <%= render 'skill' ,skill: pro %>
           <% end %>
           <% @languages.each_slice(3).each do |pro| %>
@@ -43,6 +43,10 @@
           <% @education.each_slice(3).each do |pro| %>
             <%= render 'edu', edu: pro %> 
           <% end %>
+
+          <% @projects.each_slice(3).each do |pro| %>
+            <%= render 'project' ,project: pro %>
+          <% end %>
           <!-- End Right Column -->
 
         </div>
@@ -51,6 +55,12 @@
       <!-- End Page Container -->
     </div>
     <%= render partial: 'welcome/footer' %>
+
+    <div id="<%= @profiles.name %>">
+      <%= link_to "Viewpdf" , welcome_pdf_path(@profiles) %>
+    </div>
   </body>
+
+ 
 </html> 
 

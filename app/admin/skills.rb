@@ -14,12 +14,13 @@ ActiveAdmin.register Skill do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
-  permit_params :name, :expertise
+  permit_params :name, :expertise, :status
   index do
     selectable_column
     id_column
     column :name
     column :expertise
+    column :status
     column :current_sign_in_at
     column :sign_in_count
     column :created_at
@@ -28,6 +29,7 @@ ActiveAdmin.register Skill do
   
   filter :name
   filter :expertise
+  filter :status
   filter :current_sign_in_at
   filter :sign_in_count
   filter :created_at
@@ -35,7 +37,8 @@ ActiveAdmin.register Skill do
   form do |f|
     f.inputs do
       f.input :name
-      f.input :expertise
+      f.input :expertise 
+      f.input :status
     end
     f.actions
   end

@@ -39,10 +39,8 @@ class ProfilesController < ApplicationController
   #     format.json { head :no_content }
   #   end
   # end
-  
-
-    
-      params.require(:profile).permit(:image, :name, :designation, :address, :email, :phoneno,{avatars: []})
-  
+  def profile_params
+    params.require(:profile).permit(:name, :image, , :designation, :address, :email, :phoneno,{avatars: []})
+  end
 
 end

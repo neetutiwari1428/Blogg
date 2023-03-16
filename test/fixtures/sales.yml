@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  logo: MyString
+  country: MyString
+  sales: MyString
+  value: MyString
+  Bounce: MyString
+
+two:
+  logo: MyString
+  country: MyString
+  sales: MyString
+  value: MyString
+  Bounce: MyString

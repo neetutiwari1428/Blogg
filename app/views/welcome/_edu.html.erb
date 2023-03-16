@@ -3,7 +3,7 @@
     <%# <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2> %>
     <% @education.each do |pro| %>
         <div class="w3-container">
-            <h5 class="w3-opacity"><b><%= pro.university %></b></h5>
+            <h5><b><%= pro.university %></b></h5>
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><%= pro.start %> to <%= pro.end %></h6>
             <p><%= pro.degree %></p>
         <hr>

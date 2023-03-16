@@ -77,3 +77,6 @@ gem 'devise'
 
 
 gem 'carrierwave', '>= 3.0.0.beta', '< 4.0'
+gem 'erb-formatter'
+gem 'prawn', '~> 1.2.1'
+gem 'prawn-table', '~> 0.1.0'

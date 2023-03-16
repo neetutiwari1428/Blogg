@@ -2,8 +2,8 @@
  <div class="w3-container w3-card w3-white w3-margin-bottom"> 
     <% Workexperience.all.each do |pro| %>
             <div class="w3-container">
-                <h5 class="w3-opacity"><b><%= pro.designation %><br/></b></h5>
-                <h5 class="w3-opacity"><b><%= pro.company %><br/></b></h5>
+                <h5><b><%= pro.designation %><br/></b></h5>
+                <h5><b><%= pro.company %><br/></b></h5>
                 <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><%= pro.start %> to <%= pro.end %></h6><br/>
                 <p><%= pro.details %></p>
             <hr>

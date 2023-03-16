@@ -113,6 +113,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    erb-formatter (0.4.2)
+      syntax_tree (~> 5.0)
     erubi (1.12.0)
     ffi (1.15.5)
     formtastic (4.0.0)
@@ -186,6 +188,12 @@ GEM
     nokogiri (1.14.2-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    pdf-core (0.2.5)
+    prawn (1.2.1)
+      pdf-core (~> 0.2.5)
+      ttfunk (~> 1.2.0)
+    prawn-table (0.1.2)
+    prettier_print (1.2.1)
     public_suffix (5.0.1)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -253,8 +261,11 @@ GEM
     ssrf_filter (1.1.1)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
+    syntax_tree (5.3.0)
+      prettier_print (>= 1.2.0)
     thor (1.2.1)
     timeout (0.3.2)
+    ttfunk (1.2.2)
     turbo-rails (1.4.0)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
@@ -290,8 +301,11 @@ DEPENDENCIES
   carrierwave (>= 3.0.0.beta, < 4.0)
   debug
   devise
+  erb-formatter
   importmap-rails
   jbuilder
+  prawn (~> 1.2.1)
+  prawn-table (~> 0.1.0)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
   redis (~> 4.0)
@@ -309,4 +323,4 @@ RUBY VERSION
    ruby 3.1.3p185
 
 BUNDLED WITH
-   2.4.7
+   2.4.8
