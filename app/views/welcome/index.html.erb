@@ -57,6 +57,7 @@
     <%= render partial: 'welcome/footer' %>
 
     <div id="<%= @profiles.name %>">
+      <%= button_to "Viewpdf" , welcome_pdf_path(@profiles) ,method: :put %>
       <%= link_to "Viewpdf" , welcome_pdf_path(@profiles) %>
     </div>
   </body>

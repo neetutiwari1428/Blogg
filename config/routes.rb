@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :posts
-  resources :welcome
   get 'posts/pdf/:id', to:'posts#pdf',as: 'posts_pdf'
   get 'welcome/pdf/:id', to:'welcome#pdf',as: 'welcome_pdf'
   get 'welcoms/index'
